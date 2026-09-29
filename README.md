@@ -28,6 +28,14 @@ npm run dev
 | `npm run format`    | Format everything with Prettier     |
 | `npm run build`     | Type-check and build for production |
 
+## Working with git
+
+Please use git from the **command line** during the session so we can follow along.
+
+1. Before you write any code, create a new branch for your work. Name it after yourself, e.g. `jane-doe/pokemon-grid`.
+2. Commit as you go. Aim for small commits with clear messages rather than one big commit at the end.
+3. By the end of the session, your work should be committed on your branch. You don't need to push it anywhere.
+
 ## What's already set up
 
 - **React 19 + TypeScript** (strict mode) on **Vite**
@@ -65,6 +73,7 @@ Build a page that shows the **original 151 Pokémon** in a grid.
 4. Handle the **loading** and **error** states.
 5. Type the API response. No `any`.
 6. Write **at least one test**.
+7. Commit your work to your own branch (see [Working with git](#working-with-git)).
 
 ### The API
 
