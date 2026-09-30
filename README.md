@@ -41,17 +41,18 @@ Please use git from the **command line** during the session so we can follow alo
 - **React 19 + TypeScript** (strict mode) on **Vite**
 - **Tailwind CSS v4.** Utility classes work in any component.
 - **Axios.** A PokeAPI instance is in `src/api/pokeApi.ts`.
-- **Zustand** for state management. `src/stores/useCounterStore.ts` is an example store showing how to create one and use it in a component.
-- **Vitest + React Testing Library.** `src/pages/HomePage.test.tsx` is an example test.
+- **TanStack Query** for fetching data. The `QueryClient` is set up in `App.tsx`. `src/hooks/useBerry.ts` is an example of a request: it fetches a berry from PokeAPI, and its comments show how to use it in a component.
+- **Zustand** for client-side state (things like UI toggles and filters, not data from the API). `src/stores/useCounterStore.ts` is an example store showing how to create one and use it in a component.
+- **Vitest + React Testing Library.** `src/pages/HomePage.test.tsx` is an example test. To test a component that uses TanStack Query, render it with `renderWithQueryClient` from `src/test/`.
 
 ```
 src/
-  api/          Axios instance
+  api/          Axios instance and query client
   components/   UI components
-  hooks/        Custom hooks
+  hooks/        Custom hooks (includes an example query)
   pages/        Page-level components
   stores/       Zustand stores (includes an example)
-  test/         Test setup
+  test/         Test setup and helpers
   types/        TypeScript types
   utils/        Pure helper functions
 ```
